@@ -1,14 +1,12 @@
 terraform {
   required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "~>4.0"
+    ibm = {
+      source = "IBM-Cloud/ibm"
+      version = "1.79.2"
     }
   }
 }
 
-provider "azurerm" {
-  features {
-  }
+provider "ibm" {
+  # Configuration options
 }
-
